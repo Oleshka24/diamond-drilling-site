@@ -12,12 +12,14 @@
     
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/adaptive.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <section class="header__bar">
             <div class="header__logo">
-                <a href="#" class="logo__link">
+                <a href="#banner" class="logo__link">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/OOjs_UI_icon_info_big.svg/800px-OOjs_UI_icon_info_big.svg.png" alt="logo" class="logo__ico">
                 </a>
             </div>
@@ -47,7 +49,7 @@
         </section>
         <section class="header__mobile">
             <div class="header__logo">
-                <a href="#" class="logo__link">
+                <a href="#banner" class="logo__link">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/OOjs_UI_icon_info_big.svg/800px-OOjs_UI_icon_info_big.svg.png" alt="logo" class="logo__ico">
                 </a>
             </div>
@@ -55,9 +57,21 @@
                 <button class="burger__btn burger__btn--open"><span>Открыть меню</span></button>
             </div>
         </section>
+        <section class="back-call">
+            <h2 class="back-call__title">Мы перезвоним вам!</h2>
+            <form action="">
+                <input type="text" class="form__input" placeholder="Имя">
+                <input type="text" class="form__input" placeholder="Телефон">
+                <button class="form__btn">Заказать</button>
+            </form>
+            <button class="back-call__close-btn"><span>Закрыть</span></button>
+        </section>
+        <section class="fill">
+            <button class="fill__close">Закрыть</button>
+        </section>
     </header>
     <main class="main">
-        <section class="banner">
+        <section id="banner" class="banner">
             <div class="banner__container">
                 <div class="banner__left">
                     <div class="banner__content">
