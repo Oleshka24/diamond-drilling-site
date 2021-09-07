@@ -332,6 +332,10 @@ button {
     max-height: 100%;
     
     object-fit: contain;
+}
+
+.logo__ico,
+.custom-logo {
     object-position: left;
 }
 
