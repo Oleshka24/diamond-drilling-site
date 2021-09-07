@@ -31,9 +31,11 @@
         align-items: center;
     }
 
-    .header__bar .logo__ico {
+    .header__bar .logo__ico,
+    .header__bar .custom-logo {
         margin: auto;
         display: block;
+        object-position: center;
     }
 
     .header__bar {
@@ -166,5 +168,16 @@
 
     .phones__item:not(:last-child) {
         margin-bottom: 0.625rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .header__mobile .contacts__list {
+        flex-direction: row;
+    }
+
+    .header__mobile .contacts__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 2rem;
     }
 }
