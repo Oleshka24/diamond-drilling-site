@@ -58,3 +58,22 @@ jQuery(window).scroll(function(){
         }
     })
 });
+
+// Кнопка наверх
+
+var toTop = $(".scroll_to_top");
+
+$(window).scroll(function() {     
+    if ($(window).scrollTop() > $(window).height()) {
+        toTop.addClass("scroll_to_top--show");
+        toTop.removeClass("scroll_to_top--hide");
+    } else {
+        toTop.removeClass("scroll_to_top--show");
+        toTop.addClass("scroll_to_top--hide");
+    }
+});
+
+toTop.on('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});

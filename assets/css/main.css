@@ -416,6 +416,8 @@ button {
     background-color: #c5c5c5;
 
     transition: all .2s;
+
+    cursor: pointer;
 }
 
 .banner__right {
@@ -596,4 +598,120 @@ button {
 
 .header__mobile .contacts__item:not(:last-child) {
     margin-bottom: 0.5rem;
+}
+
+.banner__form {
+    position: relative;
+}
+
+.banner__form form br,
+.banner__form form p,
+
+.contacts__form form br,
+.contacts__form form p,
+
+.back-call form br,
+.back-call form p
+{
+    display: contents;
+}
+
+.wpcf7 .ajax-loader {
+    position: absolute;
+    right: 0;
+    bottom: 1.5rem;
+}
+
+.wpcf7-not-valid-tip {
+    margin: 0 0 8px 0;
+    
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    text-align: left;
+    color: #bf3f27;
+
+    order: -1;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    color: #fff;
+    font-size: .75rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.banner__form form .wpcf7-response-output, 
+.back-call form .wpcf7-response-output 
+{
+    max-width: 16.875rem;
+}
+
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output {
+    border-color: #bf3f27;
+}
+
+.contacts__form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wpcf7-form-control-wrap {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__form form.invalid .form__btn {
+    margin-top: auto;
+}
+
+.contacts__form .wpcf7-form-control-wrap {
+    justify-content: flex-end;
+}
+
+
+.scroll_to_top {
+    width: 65px;
+    height: 65px;
+
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.7rem;
+
+    /*background-color: transparent;*/
+    background-color: #ffffff;
+    border: 3px solid #bf3f27;
+
+    transition: all .3s;
+
+    cursor: pointer;
+}
+
+.scroll_to_top--show {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.scroll_to_top--hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll_to_top__title {
+    font-size: 0.1px;
+    color: transparent;
+}
+
+.scroll_to_top svg {
+    margin-top: -0.3rem;
 }
